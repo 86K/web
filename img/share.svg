@@ -1,32 +1,68 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="225.000000pt" height="225.000000pt" viewBox="0 0 225.000000 225.000000"
- preserveAspectRatio="xMidYMid meet">
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f0f4f8"></rect>
 
-<g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M564 2172 c-40 -32 -44 -54 -44 -256 0 -183 1 -197 20 -216 11 -11
-29 -20 40 -20 11 0 29 9 40 20 18 18 20 33 20 195 l0 175 485 0 485 0 0 -92 0
--92 -34 33 c-55 53 -116 41 -116 -23 0 -27 14 -46 94 -124 66 -65 100 -92 118
--92 31 0 218 187 218 218 0 28 -47 64 -74 56 -12 -3 -36 -20 -53 -37 l-33 -31
-0 123 c0 122 0 123 -29 152 l-29 29 -544 0 c-499 0 -545 -2 -564 -18z"/>
-<path d="M515 1567 c-26 -6 -57 -28 -91 -62 -62 -62 -81 -122 -63 -205 16 -74
-83 -145 157 -166 223 -65 385 210 221 375 -27 27 -58 46 -92 56 -57 17 -75 17
--132 2z"/>
-<path d="M1599 1564 c-29 -8 -63 -30 -88 -55 -164 -165 -2 -440 221 -375 45
-13 65 26 101 66 56 62 73 123 56 202 -15 70 -92 149 -161 166 -58 15 -71 14
--129 -4z"/>
-<path d="M395 1036 c-99 -45 -136 -114 -138 -255 l-2 -96 325 0 325 0 -2 95
-c-3 142 -40 211 -138 256 -45 21 -64 24 -185 24 -121 0 -140 -3 -185 -24z"/>
-<path d="M1485 1036 c-97 -46 -135 -117 -138 -259 l-2 -92 325 0 325 0 -2 96
-c-2 141 -39 210 -138 255 -45 21 -64 24 -185 24 -121 0 -140 -3 -185 -24z"/>
-<path d="M458 472 c-54 -54 -98 -106 -98 -116 0 -9 11 -28 25 -42 31 -30 55
--26 103 19 l32 31 0 -113 c0 -116 7 -143 44 -173 19 -16 64 -18 561 -18 497 0
-542 2 561 18 40 32 44 54 44 256 0 183 -1 197 -20 216 -11 11 -29 20 -40 20
--11 0 -29 -9 -40 -20 -18 -18 -20 -33 -20 -195 l0 -175 -485 0 -485 0 0 91 0
-91 40 -36 c22 -20 47 -36 55 -36 21 0 65 45 65 66 0 9 -44 61 -97 115 -71 73
--103 99 -122 99 -18 0 -51 -26 -123 -98z"/>
-</g>
+  <!-- Title -->
+  <text x="50%" y="60" text-anchor="middle" font-size="36" font-family="Verdana, sans-serif" fill="#1f2937">
+    Technology Share
+  </text>
+
+  <!-- Laptop -->
+  <rect x="300" y="300" width="200" height="130" rx="10" fill="#374151" stroke="#111827" stroke-width="2"></rect>
+  <rect x="320" y="320" width="160" height="90" rx="5" fill="#111827"></rect>
+  <!-- Sharing Icon Inside -->
+  <circle cx="400" cy="365" r="20" fill="#3b82f6"></circle>
+  <circle cx="370" cy="345" r="8" fill="#f0f9ff"></circle>
+  <circle cx="430" cy="345" r="8" fill="#f0f9ff"></circle>
+  <line x1="370" y1="345" x2="400" y2="365" stroke="#f0f9ff" stroke-width="2"></line>
+  <line x1="430" y1="345" x2="400" y2="365" stroke="#f0f9ff" stroke-width="2"></line>
+
+  <!-- Person A (Top Left) -->
+  <circle cx="160" cy="180" r="30" fill="#facc15"></circle>
+  <circle cx="160" cy="170" r="10" fill="#fefce8"></circle>
+  <text x="145" y="210" font-size="14" font-family="Arial" fill="#78350f">Alice</text>
+
+  <!-- Person B (Top Right) -->
+  <circle cx="640" cy="180" r="30" fill="#34d399"></circle>
+  <circle cx="640" cy="170" r="10" fill="#ecfdf5"></circle>
+  <text x="625" y="210" font-size="14" font-family="Arial" fill="#065f46">Bob</text>
+
+  <!-- Arrows Connecting to Laptop -->
+  <line x1="640" y1="220" x2="500" y2="300" stroke="#60a5fa" stroke-width="4" marker-end="url(#arrowhead)"></line>
+  <line x1="160" y1="220" x2="300" y2="300" stroke="#60a5fa" stroke-width="4" marker-end="url(#arrowhead)"></line>
+
+  <!-- People Receiving (Bottom Left/Right) -->
+  <circle cx="120" cy="480" r="25" fill="#f87171"></circle>
+  <circle cx="680" cy="480" r="25" fill="#60a5fa"></circle>
+  <text x="108" y="488" font-size="20" fill="#1f2937" font-family="Arial">C</text>
+  <text x="668" y="488" font-size="20" fill="#1f2937" font-family="Arial">D</text>
+
+  <!-- Arrows from Laptop to People -->
+  <line x1="350" y1="430" x2="145" y2="460" stroke="#9ca3af" stroke-width="3" marker-end="url(#arrowhead)"></line>
+  <line x1="450" y1="430" x2="655" y2="460" stroke="#9ca3af" stroke-width="3" marker-end="url(#arrowhead)"></line>
+
+  <!-- File Icon -->
+  <rect x="380" y="150" width="40" height="50" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="2"></rect>
+  <polyline points="380,150 420,150 420,190" fill="none" stroke="#9ca3af" stroke-width="2"></polyline>
+  <text x="388" y="180" font-size="14" fill="#6b7280">.zip</text>
+
+  <!-- Arrow from file to laptop -->
+  <line x1="400" y1="200" x2="400" y2="300" stroke="#6b7280" stroke-width="3" marker-end="url(#arrowhead)"></line>
+
+  <!-- Server Icon -->
+  <rect x="600" y="350" width="80" height="100" rx="6" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"></rect>
+  <circle cx="640" cy="370" r="6" fill="#10b981"></circle>
+  <line x1="610" y1="390" x2="670" y2="390" stroke="#9ca3af" stroke-width="2"></line>
+  <line x1="610" y1="410" x2="670" y2="410" stroke="#9ca3af" stroke-width="2"></line>
+  <text x="610" y="440" font-size="12" fill="#4b5563">Server</text>
+
+  <!-- Arrow from server to laptop -->
+  <line x1="640" y1="350" x2="450" y2="300" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrowhead)"></line>
+
+  <!-- Marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#374151"></polygon>
+    </marker>
+  </defs>
 </svg>
